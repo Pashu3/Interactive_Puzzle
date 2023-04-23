@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lost Treasure Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lost Treasure Puzzle</h1>
+      <p>Find the hidden treasure without falling into the dead ends.</p>
+      <ul id="clues">
+        <li>The treasure is hidden somewhere in the forest.</li>
+        <li>There is a river that runs through the forest.</li>
+        <li>The treasure is buried under a large rock.</li>
+        <li>The treasure is guarded by a snake.</li>
+        <li>The treasure is located near a tree with a heart-shaped trunk.</li>
+      </ul>
+      <ul id="dead-ends">
+        <h2> Dead-ends:</h2>
+        <li>If you cross the river, you will be attacked by a tribe of cannibals.</li>
+        <li>If you dig under a tree with a heart-shaped trunk, you will find nothing but dirt.</li>
+      </ul>
+      <form id="input-form">
+        <label for="input">Enter your next move:</label>
+        <input type="text" id="input" name="input">
+        <input type="submit" value="Submit">
+      </form>
+      <p id="result"></p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
