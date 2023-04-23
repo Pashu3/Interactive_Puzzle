@@ -2,21 +2,18 @@
 .container {
   position: relative;
   width: 100%;
-}
-
-/* Style the image */
-.container img {
-  width: 100%;
-  height: auto;
+  height: 100vh;
+  background-image: url('/Images/Home_Bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Style the button */
 .container .btn {
-  position: absolute;
-  top: 72%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   background-color: #555;
   color: white;
   font-size: 36px;
@@ -32,15 +29,6 @@
 
 /* Media queries for smaller screens */
 @media screen and (max-width: 767px) {
-  .container {
-    width: 100%;
-  }
-  
-  .container img {
-    height: auto;
-    max-height: 80vh;
-  }
-  
   .container .btn {
     font-size: 24px;
     padding: 8px 16px;
