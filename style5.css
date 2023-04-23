@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-html,body{
+html, body{
   display: grid;
   height: 100%;
   width: 100%;
@@ -13,9 +13,9 @@ html,body{
   background: #10101000;
   background-image: url('/Images/Cands_Login.jpg');
   background-size: cover;
-  background-position: center;
-  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+  background-position: center center;
 }
+
 ::selection{
   background: #4158d0;
   color: hwb(0 1% 96%);

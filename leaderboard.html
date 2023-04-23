@@ -284,14 +284,19 @@ td {
       font-size: 55%;
     }
 }
-
+@media screen and (max-width: 768px) {
+  body {
+    background-size: contain;
+    background-position: top;
+  }
+}
 @media (max-width: 390px) {
     * {
       font-size: 45%;
     }
 }
 </style>
-<body style="background-image: url(Images/Treasure_Bg.png);">
+<body style="background-image: url(Images/Treasure_Bg.png); background-size: cover; background-position: center;">
     <main>
         <div id="header">
             <h1>Ranking</h1>

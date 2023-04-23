@@ -1,14 +1,16 @@
-container {
+/* Style the container */
+.container {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
+/* Style the image */
 .container img {
   width: 100%;
   height: auto;
 }
 
-/* Style the button and place it in the middle of the container/image */
+/* Style the button */
 .container .btn {
   position: absolute;
   top: 72%;
@@ -26,4 +28,21 @@ container {
 
 .container .btn:hover {
   background-color: black;
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  
+  .container img {
+    height: auto;
+    max-height: 80vh;
+  }
+  
+  .container .btn {
+    font-size: 24px;
+    padding: 8px 16px;
+  }
 }
