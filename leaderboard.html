@@ -346,7 +346,7 @@ td {
             scoreCell.className="points"
             rankCell.textContent = i + 1;
             nameCell.textContent = leaderboardData[i].name;
-            if(leaderboardData[i].treasure ==true){
+            if(leaderboardData[i].score!=0){
               scoreCell.textContent = "Found";
             } else {
               scoreCell.textContent = "Not Found";

@@ -26,7 +26,7 @@ const clues = [
         } else if(userInput === "dig under tree") {
           resultText = deadEnds[1];
           currentStep = -1;
-        } else if(userInput === "look for large rock" || userInput === "look for large rock" ) {
+        } else if(userInput === "look for a large rock" || userInput === "look for rock" ) {
           resultText = "You found the large rock!";
           currentStep = 1;
         } else {
@@ -34,7 +34,7 @@ const clues = [
         }
         break;
       case 1:
-        if(userInput === "move rock" || userInput === "move the large rock") {
+        if(userInput === "move the rock" || userInput === "move the large rock") {
           resultText = "You moved the rock and found the treasure!";
           updatescore();
           currentStep = 2;
